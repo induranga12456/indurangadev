@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ගිහාරගේ එලු site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to මගෙ එලු කැදැල්ල</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">එලුව</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">එලු card (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>මේ මම,</h2>
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="img/gihara 1.jpeg" alt="Laptop">
+                <h3>මම තමා එලුව</h3>
+                
+                <button onclick="addToCart('Laptop', 999)">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="img/gihara 2.jpeg" alt="Desktop">
+                <h3>මෙ මගේ එලිච්චි</h3>
+                
+                <button onclick="addToCart('Desktop PC', 799)">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="img/gihara 3.jpeg" alt="Monitor">
+                <h3>මෙ මම මොරන කාලෙ</h3>
+                
+                <button onclick="addToCart('Monitor', 199)">Add to Cart</button>
+            </div>
+            
+                    
+                    <button onclick="addToCart('Desktop PC', 799)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+    </section>
+
+    <footer>
+        <p>© මගෙ එලු වෙබ් සයිට්  එක.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
